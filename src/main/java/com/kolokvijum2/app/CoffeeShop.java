@@ -21,15 +21,20 @@ public class CoffeeShop {
             new String[] { "Espreso", "Kupućino", "Makijato", "Late", "Moka" });
     JRadioButton blendArabicaRadio = new JRadioButton("Arabica 100%");
     JRadioButton blendBalkanRadio = new JRadioButton("Balkan Blend");
+    
     JCheckBox milkCheckBox = new JCheckBox("Mleko");
     JCheckBox creamCheckBox = new JCheckBox("Šlag");
     JCheckBox rumCheckBox = new JCheckBox("Rum");
     JCheckBox cinnamonCheckBox = new JCheckBox("Cimet");
     JCheckBox espressoShootCheckBox = new JCheckBox("Dodatni espreso šot");
+    
     JLabel sugarLabel = new JLabel("Šečer");
+    
     JTextField sugarField = new JTextField("0", 2);
+    
     ButtonGroup blendGroup = new ButtonGroup();
     JLabel totalLabel = new JLabel("");
+    
     ImageIcon logo = new ImageIcon("coffee.png");
     JLabel logoLabel = new JLabel(logo);
 
@@ -62,6 +67,7 @@ public class CoffeeShop {
         sugarPanel.add(minusButton);
         sugarPanel.add(sugarField);
         sugarPanel.add(plusButton);
+        
         inputPanel.add(sugarPanel);
         inputPanel.add(new JLabel());
 
@@ -80,6 +86,7 @@ public class CoffeeShop {
         inputPanel.add(submitButton);
         inputPanel.add(resetButton);
         inputPanel.add(totalLabel);
+        
         frame.add(inputPanel, BorderLayout.NORTH);
         frame.setVisible(true);
     }
